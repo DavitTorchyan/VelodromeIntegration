@@ -604,7 +604,7 @@ describe("VelodromeIntegration", function () {
           }
         });
 
-        it.only("Should deposit ETH to DAI-USDC pool, and withdraw correct amount of USDT.", async () => {
+        it("Should deposit ETH to DAI-USDC pool, and withdraw correct amount of USDT.", async () => {
           const { otherAccount, velodromeIntegration, goodwill } =
             await loadFixture(deployVelodromeIntegration);
 
